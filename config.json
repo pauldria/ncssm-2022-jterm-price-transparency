@@ -1,0 +1,17 @@
+{
+  "author": "Paul Raff",
+  "data": [
+    {
+      "hospital_name": "Alamance Regional Medical Center",
+      "data_url": "https://www.conehealth.com/560529994_Alamance-Regional-Medical-Center-Inc_standardcharges.csv",
+      "data_url_local": "/home/raff/alamance-local.csv",
+      "date_provided": "2021-09-28",
+      "skiprows": 3,
+      "gross_charge_name":   "Gross Charge",
+      "min_inpatient_name":  "De-identified Min Inpatient Negotiated Rate Across All Payers",
+      "max_inpatient_name":  "De-identified Max Inpatient Negotiated Rate Across All Payers",
+      "min_outpatient_name": "De-identified Min Outpatient Negotiated Rate Across All Payers",
+      "max_outpatient_name": "De-identified Max Outpatient Negotiated Rate Across All Payers"
+    }
+  ]
+}
