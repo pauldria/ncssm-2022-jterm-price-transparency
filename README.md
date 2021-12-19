@@ -33,7 +33,19 @@ On January 1, 2021, the [CMS Hospital Price Transparency Rule](https://www.cms.g
 3. **Hospitals must abide by standards on their files** - it must be a machine-readable format (CMS suggests XML, JSON, and CSV but is not prescriptive here) and there is a specific naming convention of the file, which is `<EIN>_<Hospital Name>_standardcharges.<SUFFIX>`. 
 4. **Data must be updated annually** - we won't be able to address this as we've only started tracking. 
 
+### News Articles Worth Reading
+
+The Wall Street Journal in particular has had a handful of high-profile articles about price transparency. 
+
 ## Data
+
+### Dataset Option 1 - Turquoise Health
+
+[Turquoise Health](https://turquoise.health/researchers) provides a dataset for research use that is obtained in ways similar to what we're doing now. They did all the heavy lifting, but we only have an access to a slice of what's available.
+
+This data is in BigQuery in the `INSERT DATASET HERE` dataset.
+
+### Dataset Option 2 - NC Hospitals
 
 Most of the fun work is diving into the data but here's how we're bringing it together. It's very similar in style to what the [Johns Hopkins COVID Data Repository](https://github.com/CSSEGISandData/COVID-19) is doing. 
 
@@ -53,4 +65,11 @@ Most of the fun work is diving into the data but here's how we're bringing it to
 | `plan` | This is the name of the plan utilized within this Payer. |
 | `cost` | The cost. |
 
-## The Project
+## Potential Questions
+
+1. **How much of the data can you actually understand?** Put yourself in the perspective of the patient .If you looked at one of these line items in a hospital's dataset, can you infer what's actually happening and why? This is the crux of price transparency - it's not sufficient to post prices, it's necessary to provide transparency into what you are getting when you provide services to patients.
+2. **How compliant are hospitals in posting prices?** There are [specific rules around 70 "shoppable services"](https://www.cms.gov/files/document/steps-making-public-standard-charges-shoppable-services.pdf) that hospitals must post, _if they provide it_. First, see what hospitals provide what from the data. Then, how do you know if the missing data is because the hospital actually does not provide, or if it's because they didn't publish the data? 🤔
+3. **How awful are hospitals in terms of their price differentials, or insurers in their ability to advocate for their customers?** This occurs in a few ways:
+  * Gross price versus cash price - if their gross price is way higher than one would pay at the most basic level - cash - why?
+  * Max insured price versus cash price - if there are situations where it's _cheaper_ to pay cash than through insurance - why?
+  * Max insured price versus min insured price - if this differential is huge - why? 
