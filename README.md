@@ -29,13 +29,21 @@ On January 1, 2021, the [CMS Hospital Price Transparency Rule](https://www.cms.g
     - Payer-specific negotiated charge - this is for each Payer (insurer), and represents the cost negotiated for that item through that Payer. This only needs to be broken-out for Payers of a certain size.
     - De-identified minimum charge - over *all* Payers, what's the minimum? 
     - De-identified maximum charge - over *all* Payers, what's the maximum? 
-2. **Hospitals must use common billing/accounting codes** - there's a handful of them but the main ones are [Current Procedural Terminology (CPT)](https://www.aapc.com/codes/cpt-codes-range/) codes for procedures, [Healthcare Common Procedure Coding System (CHPCS)](https://www.nlm.nih.gov/research/umls/sourcereleasedocs/current/HCPCS/index.html#:~:text=HCPCS%20is%20a%20collection%20of,by%20Medicare%20and%20other%20insurers.&text=HCPCS%20is%20divided%20into%20two%20subsystems%2C%20Level%20I%20and%20Level%20II.) codes for procedures, supplies, and services, and [Diagnosis Related Groups (DRGs)](https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/MS-DRG-Classifications-and-Software) for "bundles" of services that cover a common condition/issue . 
+2. **Hospitals must use common billing/accounting codes** - there's a handful of them but the main ones are [Current Procedural Terminology (CPT)](https://www.aapc.com/codes/cpt-codes-range/) codes for procedures, [Healthcare Common Procedure Coding System (HCPCS)](https://www.nlm.nih.gov/research/umls/sourcereleasedocs/current/HCPCS/index.html#:~:text=HCPCS%20is%20a%20collection%20of,by%20Medicare%20and%20other%20insurers.&text=HCPCS%20is%20divided%20into%20two%20subsystems%2C%20Level%20I%20and%20Level%20II.) codes for procedures, supplies, and services, and [Diagnosis Related Groups (DRGs)](https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/MS-DRG-Classifications-and-Software) for "bundles" of services that cover a common condition/issue . 
 3. **Hospitals must abide by standards on their files** - it must be a machine-readable format (CMS suggests XML, JSON, and CSV but is not prescriptive here) and there is a specific naming convention of the file, which is `<EIN>_<Hospital Name>_standardcharges.<SUFFIX>`. 
 4. **Data must be updated annually** - we won't be able to address this as we've only started tracking. 
 
 ### News Articles Worth Reading
 
 The Wall Street Journal in particular has had a handful of high-profile articles about price transparency. 
+
+* [Methodology: How the WSJ Analyzed Hospital Pricing Data](https://www.wsj.com/articles/methodology-how-the-wsj-analyzed-hospital-pricing-data-11625583571?st=xjyjpqbsvgap4q0&reflink=desktopwebshare_permalink)
+* [How to Find the Cost of Hospital Medical Procedures](https://www.wsj.com/articles/how-to-find-the-cost-of-hospital-medical-procedures-11613048778?st=c1fz7rbakaq2hhu&reflink=desktopwebshare_permalink)
+* [Hospitals Draw Warning on Price Disclosure Rule Compliance](https://www.wsj.com/articles/hospitals-draw-warning-on-price-disclosure-rule-compliance-11620442193?st=d263pdegi8jnb80&reflink=desktopwebshare_permalink)
+* [Some Hospitals Charge Up to 10 Times More for Medical Scans Than Others, Study Finds](https://www.wsj.com/articles/some-hospitals-charge-up-to-10-times-more-for-medical-scans-than-others-study-finds-11638284400?st=v43nwyx80mnzu26&reflink=desktopwebshare_permalink)
+* [Hospital Prices Are Arbitrary. Just Look at the Kingsburys’ $100,000 Bill](https://www.wsj.com/articles/hospital-prices-arbitrary-healthcare-medical-bills-insurance-11635428943?st=jicpr3yac3oj4ue&reflink=desktopwebshare_permalink)
+* [Covid-19 Charges at Hospitals Can Vary by Tens of Thousands of Dollars, a WSJ Analysis Finds](https://www.wsj.com/articles/covid-19-charges-at-hospitals-can-vary-by-tens-of-thousands-of-dollars-a-wsj-analysis-finds-11633262403?st=vb5lhf3vqgkg7vl&reflink=desktopwebshare_permalink)
+* [Hospitals Often Charge Uninsured People the Highest Prices, New Data Show](https://www.wsj.com/articles/hospitals-often-charge-uninsured-people-the-highest-prices-new-data-show-11625584448?st=61bgbzoc0ce8b54&reflink=desktopwebshare_permalink)
 
 ## Data
 
