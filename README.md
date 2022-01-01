@@ -4,11 +4,14 @@
 
 Health care in America has a lot of areas in which it can improve. A great summary is found in [this summary from the Commonwealth Fund](https://www.commonwealthfund.org/publications/issue-briefs/2020/jan/us-health-care-global-perspective-2019) comparing US health care to the rest of the world. The title ***Higher Spending, Worse Outcomes?*** summarizes the situation well. 
 
-A fundamental problem here is that the health care system in America is a large complex of different entities. 
+A fundamental problem here is that the health care system in America is a large complex of different entities:
 
-```
-INSERT SECTION HERE COVERING THE BASICS OF HEALTH CARE
-```
+* **Members** are people like you and I that are the ones receiving health care. 
+* **Providers** are the doctors, nurses, specialists, and facilities that are utilized to provide health care.
+* **Employers** or Governments (also known as Plan Sponsors) are the ones that offer health insurance to groups of people - the employees for an employer, and elderly people through Medicare for the Government (as examples). 
+* **Insurers** (also known as Payers) are the primary entities that pay Providers, and they negotiate rates for these services. There are two primary different ways that a Member works with an Insurer:
+  * The member could obtain insurance directly through an Insurer, where health care is provided in exchange for a recurring **premium** charge that is paid regardless of how much health care is obtained, along with additional **copay** or **coinsurance** charges every time health care is obtained. In this situation, *the Insurer is the one taking the risk*. 
+  * The member could obtain insurance through an Employer or through the Government. There are similar charges involved, but the main notable difference is that *the Employer (or Government) is taking the risk*. 
   
 There are no natural mechanisms in the US health care system to contain costs, and all parties involved have a motivating interest to keep costs high. 
 
@@ -81,3 +84,44 @@ Most of the fun work is diving into the data but here's how we're bringing it to
   * Gross price versus cash price - if their gross price is way higher than one would pay at the most basic level - cash - why?
   * Max insured price versus cash price - if there are situations where it's _cheaper_ to pay cash than through insurance - why?
   * Max insured price versus min insured price - if this differential is huge - why? 
+
+## Getting Started
+
+There are two main things that you are being set up with: access to this data via [Google's BigQuery data platform] and a way to explore and visualize via [Mode Analytics]. You are free to use other things and explore, but it might be near-impossible to deal with the raw data outside of BigQuery although there are plenty of visualization options out there. 
+
+### Access
+
+You have two ways of accessing these resources:
+* **Pre-made "burner" accounts** - the accounts `ncssmpricetransparency.*@gmail.com` - where `*` is either 1, 2, 3, 4, or 5 - have access. [Contact me](mailto:paul@myraff.com) for the password. 
+* **Your own account** - [contact me](mailto:paul@myraff.com) with your Google account and I will give you access ASAP. 
+
+### Quickstart: Big Query
+
+* [This link](https://console.cloud.google.com/bigquery?project=ncssm-price-transparency) should take you directly to the Google BigQuery web console to explore and query the data, assuming you are already logged in as someone who has access.
+* Data in BigQuery is organized hierarchically via **projects, datasets, and tables**. The project is `ncssm-price-transparency`. There are three datasets:
+  * `hospital_data` contains data from each hospital that's available. The tables are named `hospital_N` for some number `N` for each hospital. See the contents of the table to get the hospital information. You only have read access to this data.
+  * `turquoise` contains data from the Turquoise Health dataset. It has been unaltered as much as possible. There is only one table you should care about in that dataset: `turquoise-health-data`. You only have read access to this data.
+  * `ad_hoc` is a dataset that you can use collectively to create intermediate datasets. You have full access to all tables created in this dataset, including those created by others! 
+
+Here are a few starter queries to get an understanding of what to do. There are plenty of SQL or BigQuery tutorials online, and you can access this data from Jupyter notebooks and other common methods as well.
+
+See a row from a specific hospital table:
+```
+SELECT
+  *
+FROM
+  `ncssm-price-transparency.hospital_data.hospital_0`
+LIMIT 1
+```
+
+See the ID --> Hospital mapping (this utilizes [BigQuery wildcard syntax](https://cloud.google.com/bigquery/docs/querying-wildcard-tables):
+```
+SELECT DISTINCT
+  id,
+  hospital_name
+FROM
+  `ncssm-price-transparency.hospital_data.hospital_*`
+ORDER BY
+  id
+```
+
