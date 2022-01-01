@@ -85,6 +85,81 @@ Most of the fun work is diving into the data but here's how we're bringing it to
   * Max insured price versus cash price - if there are situations where it's _cheaper_ to pay cash than through insurance - why?
   * Max insured price versus min insured price - if this differential is huge - why? 
 
+The 70 shoppable services:
+
+| Service | Code |
+|---------|------|
+| Psychotherapy, 30min | 90832 |
+| Psychotherapy, 45min | 90834 |
+| Psychotherapy, 60min | 90837 |
+| Family psychotherapy, not including patient, 50 min | 90846 |
+| Family psychotherapy, including patient, 50 min | 90847 |
+| Group psychotherapy | 90853 |
+| New patient office or other outpatient visit, typically 30 min | 99203 |
+| New patient office of other outpatient visit, typically 45 min | 99204 |
+| New patient office of other outpatient visit, typically 60 min | 99205 |
+| Patient office consultation, typically 40 min | 99243 |
+| Patient office consultation, typically 60 min | 99244 |
+| Initial new patient preventive medicine evaluation (18-39 years) | 99385 |
+| Initial new patient preventive medicine evaluation (40-64 years) | 99386 |
+| Basic metabolic panel | 80048 |
+| Blood test, comprehensive group of blood chemicals | 80053 |
+| Obstetric blood test panel | 80055 |
+| Blood test, lipids (cholesterol and triglycerides) | 80061 |
+| Kidney function panel test | 80069 |
+| Liver function blood test panel | 80076 |
+| Manual urinalysis test with examination using microscope | 81000 or 81001 |
+| Automated urinalysis test | 81002 or 81003 |
+| PSA (prostate specific antigen) | 84153-84154 |
+| Blood test, thyroid stimulating hormone (TSH) | 84443 |
+| Complete blood cell count, with differential white blood cells, automated | 85025 |
+| Complete blood count, automated | 85027 |
+| Blood test, clotting time | 85610 |
+| Coagulation assessment blood test | 85730 |
+| CT scan, head or brain, without contrast | 70450 |
+| MRI scan of brain before and after contrast | 70553 |
+| X-Ray, lower back, minimum four views | 72110 |
+| MRI scan of lower spinal canal | 72148 |
+| CT scan, pelvis, with contrast | 72193 |
+| MRI scan of leg joint | 73721 |
+| CT scan of abdomen and pelvis with contrast | 74177 |
+| Ultrasound of abdomen | 76700 |
+| Abdominal ultrasound of pregnant uterus (greater or equal to 14 weeks 0 days) single or first fetus | 76805 |
+| Ultrasound pelvis through vagina | 76830 |
+| Mammography of one breast | 77065 |
+| Mammography of both breasts | 77066 |
+| Mammography, screening, bilateral | 77067 |
+| Cardiac valve and other major cardiothoracic procedures with cardiac catheterization with major complications or comorbidities | 216 |
+| Spinal fusion except cervical without major comorbid conditions or complications (MCC) | 460 |
+| Major joint replacement or reattachment of lower extremity without major comorbid conditions or complications (MCC). | 470 |
+| Cervical spinal fusion without comorbid conditions (CC) or major comorbid conditions or complications (MCC). | 473 |
+| Uterine and adnexa procedures for non-malignancy without comorbid conditions (CC) or major comorbid conditions or complications (MCC) | 743 |
+| Removal of 1 or more breast growth, open procedure | 19120 |
+| Shaving of shoulder bone using an endoscope | 29826 |
+| Removal of one knee cartilage using an endoscope | 29881 |
+| Removal of tonsils and adenoid glands patient younger than age 12 | 42820 |
+| Diagnostic examination of esophagus, stomach, and/or upper small bowel using an endoscope | 43235 |
+| Biopsy of the esophagus, stomach, and/or upper small bowel using an endoscope | 43239 |
+| Diagnostic examination of large bowel using an endoscope | 45378 |
+| Biopsy of large bowel using an endoscope | 45380 |
+| Removal of polyps or growths of large bowel using an endoscope | 45385 |
+| Ultrasound examination of lower large bowel using an endoscope | 45391 |
+| Removal of gallbladder using an endoscope | 47562 |
+| Repair of groin hernia patient age 5 years or older | 49505 |
+| Biopsy of prostate gland | 55700 |
+| Surgical removal of prostate and surrounding lymph nodes using an endoscope | 55866 |
+| Routine obstetric care for vaginal delivery, including pre-and postdelivery care | 59400 |
+| Routine obstetric care for cesarean delivery, including pre-and postdelivery care | 59510 |
+| Routine obstetric care for vaginal delivery after prior cesarean delivery including pre-and post-delivery care | 59610 |
+| Injection of substance into spinal canal of lower back or sacrum using imaging guidance | 62322-62323 |
+| Injections of anesthetic and/or steroid drug into lower or sacral spine nerve root using imaging guidance | 64483 |
+| Removal of recurring cataract in lens capsule using laser | 66821 |
+| Removal of cataract with insertion of lens | 66984 |
+| Electrocardiogram, routine, with interpretation and report | 93000 |
+| Insertion of catheter into left heart for diagnosis | 93452 |
+| Sleep study | 95810 |
+| Physical therapy, therapeutic exercise | 97110 |
+
 ## Getting Started
 
 There are two main things that you are being set up with: access to this data via [Google's BigQuery data platform] and a way to explore and visualize via [Mode Analytics]. You are free to use other things and explore, but it might be near-impossible to deal with the raw data outside of BigQuery although there are plenty of visualization options out there. 
