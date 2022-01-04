@@ -54,7 +54,7 @@ The Wall Street Journal in particular has had a handful of high-profile articles
 
 [Turquoise Health](https://turquoise.health/researchers) provides a dataset for research use that is obtained in ways similar to what we're doing now. They did all the heavy lifting, but we only have an access to a slice of what's available.
 
-This data is in BigQuery in the `INSERT DATASET HERE` dataset.
+This data is in BigQuery - see <a href="#access">Access</a> for more details.
 
 ### Dataset Option 2 - NC Hospitals
 
