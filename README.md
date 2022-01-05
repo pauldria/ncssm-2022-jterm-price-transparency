@@ -1,5 +1,7 @@
 # 2022 NCSSM J-Term Project: Hospital Price Transparency
 
+[A deck version of this intro is here.](https://docs.google.com/presentation/d/1Fj9XJJIYtJXDRGrhMkiYMcd34vdx6_687nZWGkZWCu4/edit?usp=sharing)
+
 ## Intro
 
 Health care in America has a lot of areas in which it can improve. A great summary is found in [this summary from the Commonwealth Fund](https://www.commonwealthfund.org/publications/issue-briefs/2020/jan/us-health-care-global-perspective-2019) comparing US health care to the rest of the world. The title ***Higher Spending, Worse Outcomes?*** summarizes the situation well. 
@@ -162,7 +164,7 @@ The 70 shoppable services:
 
 ## Getting Started
 
-There are two main things that you are being set up with: access to this data via [Google's BigQuery data platform] and a way to explore and visualize via [Mode Analytics]. You are free to use other things and explore, but it might be near-impossible to deal with the raw data outside of BigQuery although there are plenty of visualization options out there. 
+There are two main things that you are being set up with: access to this data via [Google's BigQuery data platform](https://cloud.google.com/bigquery) and a way to explore and visualize via [Mode Analytics](https://www.mode.com). You are free to use other things and explore, but it might be near-impossible to deal with the raw data outside of BigQuery although there are plenty of visualization options out there. 
 
 ### Example Data
 
@@ -206,3 +208,8 @@ ORDER BY
   id
 ```
 
+### Quickstart: Mode
+
+The free version of Mode only allows for 5 collaborators in the same project, so there is a separate Mode project set up for each of the "burner" accounts `ncssmpricetransparency.*@gmail.com` and each team can latch on to one of these projects to work together. Each project is already set up with direct access to the BigQuery data. 
+
+Mode has extensive documentation and guidance on how to use, so I would suggest starting there: https://mode.com/help/articles/getting-started-with-mode/#analyzing-data.
