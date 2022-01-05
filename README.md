@@ -164,6 +164,12 @@ The 70 shoppable services:
 
 There are two main things that you are being set up with: access to this data via [Google's BigQuery data platform] and a way to explore and visualize via [Mode Analytics]. You are free to use other things and explore, but it might be near-impossible to deal with the raw data outside of BigQuery although there are plenty of visualization options out there. 
 
+### Example Data
+
+Before getting into BigQuery, you may want to take a look at these example spreadsheets, showing the before/after situation for the data from two different hospitals:
+* [Novant Health - Presbyterian](https://docs.google.com/spreadsheets/d/1x_NTbjs4CsPo4qA8HuFr8Kdm9rWtlkQX0ywYyTs-B8s/edit?usp=sharing)
+* [Cape Fear Valley Medical Center](https://docs.google.com/spreadsheets/d/1JgBJuOQ5hgr3bDWWAwv33ovWS6v7rTX6o5url-5WYDI/edit?usp=sharing)
+
 ### Access
 
 You have two ways of accessing these resources:
